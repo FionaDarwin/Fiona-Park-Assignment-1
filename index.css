@@ -1,0 +1,145 @@
+{
+  margin: unset;
+  padding: unset;
+  /*the above code removes margins so that on a mobile, the app fills the whole
+  screen*/
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+.topNavBar ul {
+  /*this is styling for the navigation bar at the top of every page*/
+  background-color: #000000;
+  overflow: hidden;
+  height: 25px;
+  line-height: 25px;
+  color: black;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  list-style-type: none;
+  text-align: center;
+}
+
+.topNavBar ul li a {
+  float: left;
+  color: #FFFFFF;
+  font-family: Arial;
+  padding: .2em 1em;
+  text-decoration: none;
+}
+
+.topNavBar li {
+  display: inline;
+}
+
+.container{
+  padding: 1rem;
+}
+
+#userInputForm label {
+  /*this is styling for the label that says "Add an item to the list"*/
+  display: block;
+  margin-bottom: 1rem;
+}
+
+#userInputForm input {
+  /*this is styling for the box that the user types into*/
+  height: 1rem;
+  text-align: left;
+  border: 20px solid #333333;
+}
+
+#addItem {
+  /*this is styling for the interior of the box that the user types into*/
+  border: unset;
+  background-color: #ffcc00;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+#addItemButton {
+  border: unset;
+  background-color: #0066ff; /*the background colour on the button*/
+  color: #ff6600; /*the text colour on the button*/
+  padding: 0.5rem;
+}
+
+#itemsAlreadyOnTheList {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.itemOnList {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  background-color: #333333;
+  margin-bottom:0.5rem;
+}
+
+.checkbox {
+  height: 100%
+  width: 2.5rem;
+}
+
+.existingItem {
+  text-align: centre;
+}
+
+.buttonToRemoveItem {
+  margin: 0 0 0 auto; /*this makes the button go on the far rhs of the page*/
+  border: unset;
+  background-color: : #b110000;
+  color: #fff;
+  font-size: 0.8rem;
+  width: 2.5rem;
+  height: 100%;
+}
+
+.buttonToRemoveItem:active {
+  /*this makes the button visibly depress*/
+  margin-top: 10px;
+}
+
+.itemOnListAlreadyPurchased {
+  background-color: : #00805a;
+  color: #fff;
+}
+
+.itemOnListAlreadyPurchased p {
+  /*styles the text of "already purchased" items with strikethrough font*/
+  text-decoration: line-through;
+}
+
+/* Place the navbar at the bottom of the page, and make it stick */
+.bottomNavBar {
+  background-color: #000000;
+  overflow: hidden;
+  height: 25px;
+  border-radius: 5px;
+  list-style-type: none;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+}
+
+/* Style the links inside the navigation bar */
+.bottomNavBar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.bottomNavBar a:hover {
+  background-color: #ddd;
+  color: black;
+}

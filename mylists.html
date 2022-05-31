@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!--metadata-->
+    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--the document title-->
+    <title>The Listicle</title>
+    <!--defines the relationship between this document and external resources-->
+    <link rel="logo" href="./lib/logolisticle.png">
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://kit.fontawesome.com/4872a2325e.js" crossorigin="anonymous"></script>
+  </head>
+
+
+  <body>
+    <!--the navigation bar that appears at the top of the page-->
+
+    <div class="topNavBar">
+      <ul>
+        <li id="menuButton"><a href="menu.html">MENU</a></li>
+        <li id="logolisticle"><a href="menu.html">The Listicle</a></li>
+        <li id="myListsButton"><a href="mylists.html">MY LISTS</a></li>
+      </ul>
+    </div>
+
+
+    <!--the main area of the app-->
+    <div class="container-fluid">
+
+      <!--
+      inside the main area is a form that can take user input such
+      as typed in items to add to the shopping list, and quantities
+      -->
+      <form id="userInputForm">
+
+        <label>
+          Add an item to the list
+          <input type="text" id="addItem">
+        </label>
+
+        <button type="submit" id="addItemButton">
+          Add Item
+        </button>
+
+      </form>
+    </div>
+
+    <!--shows the names and purchase status of items already on the list-->
+    <div id="itemsAlreadyOnTheList"> <!--he called this "itemDiv"-->
+      <div class="itemOnList"> <!--he called this "item"-->
+          <label>
+        <input type="checkbox" class="checkbox" checked>
+          </label>
+
+        <div class="existingItem">
+          <p>Sausages</p>
+          <p>3</p>
+        </div>
+
+        <button class="buttonToRemoveItem">X</button>
+      </div>
+
+      <div class="itemOnListAlreadyPurchased">
+          <label>
+        <input type="checkbox" class="checkbox" checked>
+          </label>
+
+        <div class="existingItemAlreadyPurchased">
+          <p>Old socks</p>
+          <p>8</p>
+        </div>
+
+        <button class="buttonToRemoveItem">X</button>
+      </div>
+
+    </div>
+
+    <nav class="bottomNavBar">
+      <a href="./index.html" class="bottomlinks""><i class="fa-solid fa-house n_icons"></i></a>
+      <        <li><a href="./appsettings.html"><i class="fa-solid fa-gear"></i></a></li>
+        <li><a href="./apphelp.html"><i class="fa-solid fa-question"></i></a></li>
+
+    </nav>
+
+    <!--<p><a href="My Lists home sceen"</p>-->
+  </body>
